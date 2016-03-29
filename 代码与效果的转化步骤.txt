@@ -1,0 +1,6 @@
+复制Github的网址，在这个网址的前面加上 https://htmlpreview.github.io/? 就是效果图了
+
+例如：https://github.com/flm1139/task/blob/master/task07.html  这是代码的网址
+     
+
+      https://htmlpreview.github.io/?https://github.com/flm1139/task/blob/master/task07.html 这就是效果图的网址

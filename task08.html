@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task08</title>
+
+	<style>
+	/*小屏幕（平板，大于等于768px）*/
+	@media(min-width:@screen-sm-min){
+		
+	}
+	/*超小屏幕，（手机，小于768px）*/
+	@media(max-width:@screen-xs-max){
+
+	}
+	@grid-columns:12;
+	@grid-gutter-width:20px;
+	@grid-float-breakpoint:768px;
+	body{
+		padding:0px;
+	}
+	.container{
+		border:1px solid #999;
+		margin-bottom:20px;
+		padding:20px;
+	}
+	div[class^="col"]{
+		background:#eee;
+		border:1px solid #999;
+		height:50px;
+		margin-bottom:20px;
+	}
+    
+	</style>
+	
+</head>
+<body>
+  <div class="container">
+  	<div class="row">
+  	  
+  		<div class="row1">
+  		   <div class="col-sm-4">四栏</div>
+  		   <div class="col-sm-4">四栏</div>
+  		   <div class="col-sm-4">四栏</div>
+  		</div>
+  		<div class="row1">
+  			<div class="col-sm-3">三栏</div>
+  			<div class="col-sm-6">六栏</div>
+  			<div class="col-sm-3">三栏</div>
+  		</div>
+  		<div class="row1">
+  		    <div class="col-sm-1">一栏</div>
+  		    <div class="col-sm-1">一栏</div>
+  		    <div class="col-sm-2">二栏</div>
+  		    <div class="col-sm-2">二栏</div>
+  		    <div class="col-sm-6">六栏</div>
+  		</div>
+  	</div>
+  </div>
+  <div class="container">
+  	<div class="row">
+  		<div class="row22">
+  			<div class="col-xs-6">六栏</div>
+  			<div class="col-xs-6">六栏</div>
+  		</div>
+  		<div class="row2">
+  			<div class="col-xs-12">十二栏</div>
+  		</div>
+  		<div class="row2">
+  			<div class="col-xs-3">三栏</div>
+  			<div class="col-xs-6">六栏</div>
+  			<div class="col-xs-3">三栏</div>
+  		</div>
+  		<div class="row2">
+  			<div class="col-xs-2">二栏</div>
+  			<div class="col-xs-2">二栏</div>
+  			<div class="col-xs-8">八栏</div>
+  		</div>
+  		<div class="row2">
+  			<div class="col-xs-3">三栏</div>	
+  			<div class="col-xs-3">三栏</div>	
+  		</div>
+  	</div>
+  </div>
+</body>
+</html>

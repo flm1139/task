@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task02</title>
+	
+	<style>
+	body{
+		margin:0px;
+		padding:0px;
+        background:#dedede;
+	}
+	.div2,.div3,.div4,.div5,.div6,.div7{
+		margin:20px;
+		padding:20px;
+		border-right:3px solid rgb(132,132,132);
+		border-bottom:3px solid rgb(132,132,132);
+		background:white;
+		line-height:150%;
+	}
+	.div1{
+		width:100%;
+		height:50px;        
+        margin-bottom:0px;
+		background:rgb(51,51,51);
+
+	}
+	.div1-1{
+		width:100px;
+		height:40px;
+		margin-left:20px;
+		margin-top:5px;
+		float:left;
+	}
+	
+	
+	.div1-2{
+      float:right;
+	}
+	.div1-2 li{
+		float:left;
+		margin-right:20px;
+	}
+	a.div1-2-1{
+       
+	}
+    li a{
+    	text-decoration:none;
+    	color:white;
+    }
+	.div2{
+		clear:both;
+	}
+	.div3 ul li{
+		list-style-type:none;
+	}
+	dd{
+		width:350px;
+		margin-bottom:20px;
+        text-align:center;
+		border:2px solid gray;		
+	}
+	table{
+		width:1200px;
+		border-collapse:collapse;
+        margin:0 auto;
+	}
+	thead{
+		background:black;
+		color:white;
+	}
+	tfoot{
+       background:gray;
+	}
+
+	#sub{		
+		width:100%;
+		height:50px;
+		border-radius:15px;
+		background:#3355d0;
+		color:white;
+		font-size:1.5em;
+	}
+    .div7{
+    	width:100%;
+    	height:50px;
+    	line-height:50px;
+        margin:0px; 
+    	padding:0px;
+    	background:black;
+    	color:white;
+    	text-align:center;
+    }
+    .div6 table tr td:first-child{
+    	text-align:right;
+    }
+    .div6 table tr td#top{
+    	vertical-align:top;
+    }
+    .div6 h3{
+    	height:30px;
+    	line-height:30px;
+    	padding-left:10px;
+    	border-left:3px solid rgb(132,132,132);
+    }
+	</style>
+</head>
+<body>
+	<div class="div1">
+	    <img src="bd_logo1.png" alt="" class="div1-1">	    
+		<ul class="div1-2">
+		    <li><a href="">导航链接一</a></li>
+			<li><a href="">导航链接二</a></li>
+			<li><a href="">导航链接三</a></li>
+			<li><a href="" class="div1-2-1">导航链接四</a></li>			
+		</ul>	
+	</div>
+	<div class="div2">
+		<h1>文章一级标题</h1>
+		<h2 class="p">文章二级标题</h2>
+		<p class="p">文章作者 文章发表时间</p>
+		<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br>
+		这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br>
+		这是一个很长很长的段落，这是一个很长很长的段落，<a href="">这里有个链接链接到http://ife.baidi.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有个粗体字</strong>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，</p>
+		<img src="01.jpg" alt="">
+		<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br>
+		这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有个粗体字</strong>这是一个很长很长的段落，这是一个很长很长的段落，<a href="">这里有个链接链接到http://ife.baidi.com</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，</p>
+	</div>
+	<div class="div3">
+		<h1>另一篇文章一级标题</h1>
+		<h2 class="p">文章二级标题</h2>
+		<p class="p">文章作者 文章发表时间</p>
+		<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br>
+		这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br>
+		这是一个很长很长的段落，这是一个很长很长的段落，<a href="">这里有个链接链接到http://ife.baidi.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有个粗体字</strong>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，</p>
+		<img src="01.jpg" alt="">
+		<ul>
+			<li>列表项目一</li>
+			<li>列表项目二</li>
+			<li>列表项目三</li>
+		</ul>
+	</div>
+	<div class="div4">
+		<h2>图片</h2>
+		<dl>
+			<dt>
+				<dd>好看的图片<br><img src="01.jpg" alt=""></dd>
+			</dt>
+			<dt>
+				<dd>好看的图片<br><img src="01.jpg" alt=""></dd>
+			</dt>
+			<dt>
+				<dd>好看的图片<br><img src="01.jpg" alt=""></dd>
+			</dt>
+			<dt>
+				<dd>好看的图片<br><img src="01.jpg" alt=""></dd>
+			</dt>
+			<dt>
+				<dd>好看的图片<br><img src="01.jpg" alt=""></dd>
+			</dt>
+			<dt>
+				<dd>好看的图片<br><img src="01.jpg" alt=""></dd>
+			</dt>
+			<dt>
+				<dd>好看的图片<br><img src="01.jpg" alt=""></dd>
+			</dt>
+			<dt>
+				<dd>好看的图片<br><img src="01.jpg" alt=""></dd>
+			</dt>
+			<dt>
+				<dd>好看的图片<br><img src="01.jpg" alt=""></dd>
+			</dt>
+			<dt>
+				<dd>好看的图片<br><img src="01.jpg" alt=""></dd>
+			</dt>
+		</dl>
+	</div>
+	<div class="div5">
+		<h1>最后一篇文章一级标题</h1>
+		<h2 class="p">文章二级标题</h2>
+		<p class="p">文章作者 文章发表时间</p>
+		<ol>
+			<li>排名1</li>
+			<li>排名2</li>
+			<li>排名3</li>
+		</ol>
+		下面是一个表格，给表格加了border="1"好让你看出是一个表格
+		<table border="1">
+		    <thead>
+				<tr>
+					<td>表头</td>
+					<td>表头</td>
+					<td>表头</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>表内容单元格</td>
+					<td>表内容单元格</td>
+					<td><a href="">操作</a></td>
+				</tr>
+				<tr>
+					<td>表内容单元格</td>
+					<td>表内容单元格</td>
+					<td><a href="">操作</a></td>
+				</tr>
+				<tr>
+					<td>表内容单元格</td>
+					<td>表内容单元格</td>
+					<td><a href="">操作</a></td>
+				</tr>
+				<tr>
+					<td>表内容单元格</td>
+					<td>表内容单元格</td>
+					<td><a href="">操作</a></td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td>总计</td>
+					<td colspan="2">1000</td>
+					
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+	<div class="div6">
+	    <h3>这里以后是个侧栏，这是侧栏的标题</h3>
+	    <form action="">
+	       <table>
+	       	<tr>
+	       		<td>请输入邮箱地址：</td>
+	       		<td><input type="text" name="num" value="这是一个文本输入框"></td>
+	       	</tr>
+	       	<tr>
+	       		<td></td>
+	       		<td>邮箱地址请按要求输入</td>
+	       	</tr>
+	       	<tr>
+	       		<td>请输入密码：</td>
+	       		<td><input type="password" name="num" value="这是一个文本输入框"></td>
+	       	</tr>
+	       	<tr>
+	       		<td>请重复输入密码：</td>
+	       		<td><input type="password" name="num" value="这是一个文本输入框"></td>
+	       	</tr>
+	       	<tr>
+	       		<td></td>
+	       		<td>密码请为6-16位英文数字</td>
+	       	</tr>
+	       	<tr>
+	       		<td>性别：</td>
+	       		<td><input type="radio" name="sex" value="male" checked="" >男
+	       		    <input type="radio" name="sex" value="female">女
+	       		</td>
+	       	</tr>
+	       	<tr>
+	       		<td>城市：</td>
+	       		<td><select name="" id="" size="1">
+		    		<option value="" >上海</option>
+		    		<option value="" selected="">北京</option>
+		    		<option value="">天津</option>
+		    		<option value="">广东</option>
+	    	        </select>
+	    	    </td>
+	       	</tr>
+	       	<tr>
+	       		<td>爱好：</td>
+	       		<td>
+	       			<input type="checkbox" name="fav" value="">运动
+			    	<input type="checkbox" name="fav" value="">艺术
+			    	<input type="checkbox" name="fav" value="">科学
+	       		</td>
+	       	</tr>
+	       	<tr>
+	       		<td id="top">个人描述：</td>
+	       		<td>
+	       		    <textarea name="" id="" cols="30" rows="5">这是一个多行文本输入框，请输入您的个人信息</textarea>
+	       		</td>
+	       	</tr>
+	       </table>
+	    	<input id="sub" type="submit" name="" value="确认提交">
+	    </form>
+	</div>
+	<div class="div7">
+        版本所有&copy;
+    </div>
+</body>
+</html>

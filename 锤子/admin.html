@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>后台页面</title>
+	<link rel="stylesheet" href="public/css/bootstrap.css">
+	<script src="public/js/jquery.min.js"></script>
+	<script src="public/js/bootstrap.min.js"></script>
+	<script src="public/js/docs.min.js"></script>
+	<style>
+		.navbar-right{
+			padding-right:30px;
+		}
+		.logo{
+
+		}
+		.navbar-brand{
+			overflow:hidden;
+		}
+		#logo{
+			margin-top:-10px;
+		}
+		.navbar-btn a{
+			text-decoration:none;
+			font-size:20px;
+		}
+		.navbar-btn{
+			margin-right:30px;
+		}
+		.navbar-btn a:hover{
+			color:white;
+		}
+		.navbar-text:hover{
+			color:white;
+		}
+		.panel-heading{
+			cursor:pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<!-- 导航 -->
+		<nav class="navbar navbar-inverse">
+			<div class="navbar-header">
+				<div class="navbar-brand">
+					<a href="#">
+						<img src="logo.png" alt="" id="logo">
+					</a>
+				</div>
+				<h3 class="navbar-text">锤子后台管理系统</h3>
+			</div>
+			<div class="dropdown pull-right">
+				<div class="btn navbar-btn dropdown-toggle" data-toggle="dropdown">
+					<a href="javascript:" class="admin">admin</a><span class="caret"></span>
+				</div>	
+			
+				<ul class="dropdown-menu">
+					<li><a href="">消息</a></li>
+					<li><a href="">设置</a></li>
+					<li><a href="">返回首页</a></li>
+					<li class="divider"><a href=""></a></li>
+					<li><a href="">退出</a></li>
+				</ul>
+			</div>
+			<h3 class="navbar-text navbar-right">欢迎登陆</h3>
+		</nav>
+		<!-- 侧栏 -->
+		<div class="row">
+			<div class="col-md-2">
+				<div class="panel-group">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							用户管理
+						</div>
+						<ul class="list-group">
+							<a href="admin/ck.html" class="list-group-item" target="cap">查看用户</a>
+							<a href="admin/add.html" class="list-group-item" target="cap">添加用户</a>
+						</ul>
+					</div>
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							商品管理
+						</div>
+						<ul class="list-group">
+							<a href="" class="list-group-item">查看商品</a>
+							<a href="" class="list-group-item">添加商品</a>
+						</ul>
+					</div>
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							订单管理
+						</div>
+						<ul class="list-group">
+							<a href="" class="list-group-item">查看订单</a>
+						</ul>
+					</div>
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							订单状态管理
+						</div>
+						<ul class="list-group">
+							<a href="" class="list-group-item">查看订单状态</a>
+							<a href="" class="list-group-item">添加订单状态</a>
+						</ul>
+					</div>
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							广告管理
+						</div>
+						<ul class="list-group">
+							<a href="" class="list-group-item">查看广告</a>
+							<a href="" class="list-group-item">添加广告</a>
+						</ul>
+					</div>
+				</div>		
+			</div>
+			<div class="col-md-10">
+				<iframe src="admin/caption.html" frameborder="0" width="100%" height="400px" scrolling="no" name="cap"></iframe>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	$('.panel-heading').next().hide();
+	$('.panel-heading').click(function(){
+		$(this).next().slideToggle();
+	});
+	// $('.dropdown-menu').find('li').last().click(function(){
+		
+	// });
+</script>
+</html>

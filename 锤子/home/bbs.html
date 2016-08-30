@@ -1,0 +1,836 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>锤子科技官方论坛</title>
+	<script src="../public/js/jquery.min.js"></script>
+	<link rel="stylesheet" href="../public/css/smartisan.css">
+</head>
+<body>
+	<div class="container">
+		<!-- 登录注册 -->
+		<div class="sign-in">
+			<div class="fixed">
+				<h4>登录<a href="javascript:" class="close">&times;</a></h4>
+				<div class="form">
+					<p class="admin">
+						<span></span>
+						<input type="text" placeholder="手机号/邮箱">
+					</p>
+					<p class="password">
+						<span></span>
+						<input type="password" placeholder="密码">
+					</p>
+					<p class="check">
+						<input type="checkbox" name="" id="">
+						<span>7天内自动登录</span>
+						<a href="javascript:" class="signOut">注册新用户</a>
+						<a href="javascript:" class="forget">忘记密码？</a>
+					</p>
+					<p class="btn">
+						<input type="submit" value="登录">登录
+					</p>
+					<p class="tog">
+						<a href="">国际手机号码登录<span></span></a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="sign-out">
+			<div class="fixed">
+				<h4>注册<a href="javascript:;" class="close">&times;</a></h4>
+				<div class="form">
+					<p class="tel">
+						<span class="span1"></span>
+						<span class="span2">+86</span>
+						<input type="text" placeholder="手机号">
+						<select name="" id="">
+							<option value="">中国</option>
+							<option value="">美国</option>
+							<option value="">澳大利亚</option>
+							<option value="">巴拿马</option>
+							<option value="">非洲</option>
+							<option value="">菲律宾</option>
+							<option value="">泰国</option>
+							<option value="">韩国</option>
+							<option value="">朝鲜</option>
+							<option value="">法国</option>
+							<option value="">德国</option>
+							<option value="">意大利</option>
+							<option value="">法国</option>
+							<option value="">日本</option>
+						</select>
+					</p>
+					<div class="check-num">
+						<p class="check1">
+							<span class="span3"></span>
+							<input type="text" placeholder="验证码">
+						</p>
+						<p class="check2"></p>
+						<div class="clear" style="clear:both"></div>
+					</div>
+					<div class="message">
+						<p class="check1">
+							<span class="span3"></span>
+							<input type="text" placeholder="短信验证码">
+						
+						</p>
+						<p class="check2"><a href="">获取验证码</a></p>
+						<div class="clear" style="clear:both"></div>
+					</div>
+					<p class="email">
+						<span class="span1"></span>
+						<input type="email" placeholder="邮箱">
+					</p>
+					<p class="password">
+						<span class="span1"></span>
+						<input type="password" placeholder="密码">
+					</p>
+					<p class="check-password">
+						<input type="password" placeholder="重复密码">
+					</p>
+					<p class="btn">
+						<input type="submit" value="注册">
+					</p>
+					<p class="check">
+						<input type="checkbox" name="" id="check">
+						<span>
+							我已阅读并同意遵守 
+							<a href="http://www.smartisan.com/#/agreement" target="_blank">法律声明</a>
+							和
+							<a href="http://www.smartisan.com/#/privacy" target="_blank">隐私条款</a>
+						</span>
+					</p>
+					<p class="tog">
+						<a>如果您已拥有 Smartisan 账户，则可在此</a>
+						<input type="submit" value="登录">
+					</p>
+					<div class="modal1 warning">
+						<em>&#9670;</em>
+						<span>&#9670;</span>
+						<i></i>
+						oh！孩子，手机号码是以182开头的11位数字
+					</div>
+					<div class="modal2 warning">
+						<em>&#9670;</em>
+						<span>&#9670;</span>
+						<i></i>
+						oh！孩子，请仔细看看这4位验证码
+					</div>
+					<div class="modal3 warning">
+						<em>&#9670;</em>
+						<span>&#9670;</span>
+						<i></i>
+						oh！孩子，你的6位短信验证码肯定看错了
+					</div>
+					<div class="modal4 warning">
+						<em>&#9670;</em>
+						<span>&#9670;</span>
+						<i></i>
+						邮箱格式不对，例如@qq.com,@163.cn等···
+					</div>
+					<div class="modal5 warning">
+						<em>&#9670;</em>
+						<span>&#9670;</span>
+						<i></i>
+						密码至少6位，可以是数字和字母等字符
+					</div>
+					<div class="modal6 warning">
+						<em>&#9670;</em>
+						<span>&#9670;</span>
+						<i></i>
+						oh！孩子，两次输入的密码不对哦
+					</div>
+					<div class="modal7 warning">
+						<em>&#9670;</em>
+						<span>&#9670;</span>
+						<i></i>
+						是不是忘了点选下面的协议了哦
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="naver">
+			<div class="naver-head">
+				<a href=""><span class="span1"></span></a>
+				<div class="sign">
+					<a href="javascript:" class="signOut"><span>注册</span></a>
+					<span>|</span>
+					<a href="javascript:" class="signIn"><span>登录</span></a>
+					<div class="clear"></div>
+				</div>
+				<ul>
+					<li><a href="">论坛首页</a></li>
+					<li><a href="">论坛版块</a></li>
+					<li><a href="../index.html">官方网站</a></li>
+					<li><a href="../index.html">在线商城</a></li>
+					<li><a href="cloud.html">欢喜云</a></li>
+					<li><a href="bbs.html">应用下载</a></li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+			<!-- 隐藏的下拉菜单 -->
+			<div class="naver-dropdown">
+				<div class="list">
+					<ul>
+						<li><a href="">官方区</a></li>
+						<li><a href="">官方动态</a></li>
+						<li><a href="">官方活动</a></li>
+					</ul>
+					<ul>
+						<li><a href="">产品区</a></li>
+						<li><a href="">Smartisan T2</a></li>
+						<li><a href="">Smartisan T1</a></li>
+						<li><a href="">坚果手机</a></li>
+						<li><a href="">情怀背壳</a></li>
+						<li><a href="">Bug 反馈</a></li>
+						<li><a href="">单发应用</a></li>
+						<li><a href="">功能建议</a></li>
+					</ul>
+					<ul>
+						<li><a href="">资源区</a></li>
+						<li><a href="">摄影分享</a></li>
+						<li><a href="">刷机资源</a></li>
+						<li><a href="">安卓应用</a></li>
+						<li><a href="">安卓游戏</a></li>
+					</ul>
+					<ul>
+						<li><a href="">综合区</a></li>
+						<li><a href="">科技之外</a></li>
+						<li><a href="">跳蚤市场</a></li>
+						<li><a href="">论坛事务</a></li>
+						<li><a href="">线下聚会</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- 另一个导航首 -->
+			<div class="naver-caption">
+				<div class="search">
+					<select>
+						<option value=""><a href="">&nbsp;&nbsp;帖子</a></option>
+						<option value=""><a href="">&nbsp;&nbsp;用户</a></option>
+					</select>
+					<input type="text" placeholder="请输入搜索内容">
+					<button><a href=""></a></button>
+				</div>
+				<h2><a href="">论坛首页</a></h2>
+			</div>
+		</div>
+		<!-- 轮播 -->
+		<div class="carousel">
+			<div num="car5">
+				<a href="javascript:;">
+					<img src="../public/imgs/bbs05.png" alt="">
+				</a>
+			</div>
+			<div num="car4">
+				<a href="javascript:;">
+					<img src="../public/imgs/bbs04.png" alt="">
+				</a>
+			</div>
+
+			<div num="car3">
+				<a href="javascript:;">
+					<img src="../public/imgs/bbs03.jpg" alt="">
+				</a>
+			</div>
+			<div num="car2">
+				<a href="javascript:;">
+					<img src="../public/imgs/bbs02.jpg" alt="">
+				</a>
+			</div>
+			<div num="car1">
+				<a href="javascript:;">
+					<img src="../public/imgs/bbs01.jpg" alt="">
+				</a>
+			</div>
+			<ul class="carousel-light">
+				<li class="active" num="car1"></li>
+				<li num="car2"></li>
+				<li num="car3"></li>
+				<li num="car4"></li>
+				<li num="car5"></li>
+				<div class="clear"></div>
+			</ul>
+		</div>
+		<!-- 正文 -->
+		<div class="contents">
+			<div class="left">
+				<div class="top">
+					<h4>
+						<span></span>
+					精品资讯
+						<div class="clear"></div>
+					</h4>
+					<div class="caption">
+						<h2><a target="_blank" href="/forum.php?mod=viewthread&amp;tid=368634">Smartisan Show：我的第一次视频习作</a></h2>
+						<ul>
+							<li>蝈蝈亲戚</li>
+							<li>发表于 2016-06-29 20:16:59</li>
+							<li>171</li>
+							<li>5057</li>
+							<div class="clear"></div>
+						</ul>
+						<div class="img">
+							<a href="/forum.php?mod=viewthread&amp;tid=368634" target="_blank">
+							   <img src="../public/imgs/14672719742420.jpg" alt="">
+							</a>
+						</div>
+						<p>
+							Smartisan Show 是论坛锤友“蝈蝈亲戚”的视频处女作。他把“Smartisan”的字母单独展示后，又重新组合为“smart”和“artisan”，将 “Smartisan”这个组合词的含义“智能手机时代的工匠”呈现出来。
+							<span>
+								<a target="_blank" href="/forum.php?mod=viewthread&amp;tid=368634">查看全文 ></a>
+							</span>
+						</p>
+					</div>
+					<div class="caption">
+						<h2><a target="_blank" href="/forum.php?mod=viewthread&amp;tid=366243">[一分钟系列] 是怎样完成的</a></h2>
+						<ul>
+							<li>snhc</li>
+							<li>发表于 2016-06-25 11:37:36</li>
+							<li>18</li>
+							<li>2915</li>
+							<div class="clear"></div>
+						</ul>
+						<div class="img">
+							<a href="/forum.php?mod=viewthread&amp;tid=366243" target="_blank">
+	                        	<img src="../public/imgs/14670825793799.jpg" alt="">
+	                    	 </a>
+						</div>
+						<p>
+							最近没想好题材，所以有了这个内容，大家也许是不好奇这个的，不过作为一个教程贴，这篇帖子可以教你在论坛发一篇排版规整的帖子，这次我们就分步骤来讲吧。
+							<span>
+								<a target="_blank" href="/forum.php?mod=viewthread&amp;tid=366243">查看全文 ></a>
+							</span>
+						</p>
+					</div>
+					<div class="caption">
+						<h2><a target="_blank" href="/forum.php?mod=viewthread&amp;tid=362992">[T1 摄影] 无题</a></h2>
+						<ul>
+							<li>sigfried</li>
+							<li>发表于 2016-06-17 16:18:17</li>
+							<li>45</li>
+							<li>4202</li>
+							<div class="clear"></div>
+						</ul>
+						<div class="img">
+							<a href="/forum.php?mod=viewthread&amp;tid=362992" target="_blank">
+	                        	<img src="../public/imgs/14665787576462.png" alt="">
+	                     	</a>
+						</div>
+						<p>
+							安塞尔·亚当斯说：“真正的摄影作品不需要言语去说明，而且它也无法用言语说明。”来看论坛用户“sigfried”的一组 T1 摄影作品。
+							<span>
+								<a target="_blank" href="/forum.php?mod=viewthread&amp;tid=362992">查看全文></a>
+							</span>
+						</p>
+					</div>
+					<div class="caption">
+						<h2><a target="_blank" href="/forum.php?mod=viewthread&amp;tid=362916">我也爱这个世界（Smartisan OS 不完整用户体验报告）</a></h2>
+						<ul>
+							<li>alex02012</li>
+							<li>发表于 2016-06-17 13:15:13</li>
+							<li>113</li>
+							<li>11912</li>
+							<div class="clear"></div>
+						</ul>
+						<div class="img">
+							<a href="/forum.php?mod=viewthread&amp;tid=362916" target="_blank">
+								<img src="../public/imgs/14664809578491.jpg" alt="">
+							</a>
+						</div>
+						<p>
+							现在人人离不开手机了，若干年以后，墓碑上只需刻二维码，路过的人拿出手机扫一扫，一生的故事就出来了。爱过谁、恨过谁、还牵挂着谁……简称为“扫墓”。这并不可怕，可怕的是屏幕上显示“对方已添加你为好友”。
+							<span>
+								<a target="_blank" href="/forum.php?mod=viewthread&amp;tid=362916">查看全文 ></a>
+							</span>
+						</p>
+					</div>
+					<div class="caption">
+						<h2><a target="_blank" href="/forum.php?mod=viewthread&amp;tid=360307">手把手教你下载 Google Play </a></h2>
+						<ul>
+							<li>flyrra</li>
+							<li>发表于 2016-06-12 15:25:48</li>
+							<li>68</li>
+							<li>10557</li>
+							<div class="clear"></div>
+						</ul>
+						<div class="img">
+							<a href="/forum.php?mod=viewthread&amp;tid=360307" target="_blank">
+	                        	<img src="../public/imgs/14660475304860.png" alt="">
+	                     	</a>
+						</div>
+						<p>
+							谷歌宣布退出中国使得国内应用商店大放异彩。与苹果的 App Store 和 Google Play 不同的是，国内的应用商店大多无需用户付费下载。由于没有直接的盈利模式，并且做应用商店的门槛不高，导致一些不良商店里充斥着劣质、盗版甚至修改过的app。如果你想用到一些更规范更新潮的 app，从 Google Play 下载是必须 get 的技能。
+							<span>
+								<a target="_blank" href="/forum.php?mod=viewthread&amp;tid=360307">查看全文 ></a>
+							</span>
+						</p>
+					</div>
+					<div class="foot">
+						<a href="">查看更多资讯</a>
+					</div>
+				</div>
+				
+				<div class="bottom">
+					<h4>
+						<span></span>
+						热帖推荐
+						<div class="clear"></div>
+					</h4>
+					<div class="div">
+						<div class="lefts">
+							<a href="/?212804">
+                        		<img src="../public/imgs/04_avatar_middle.jpg" width="50" height="50">
+                     		</a>
+						</div>
+						<div class="rights">
+							<h5>
+								<a href="/forum.php?mod=viewthread&amp;tid=367745" target="_blank">了解 Smartisan OS 的演示模式</a>
+								<span></span>
+							</h5>
+							<ul>
+								<li>蝈蝈亲戚</li>
+								<li>发表于 2016-06-29 20:16:59</li>
+								<li>171</li>
+								<li>5057</li>
+								<div class="clear"></div>
+							</ul>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="div">
+						<div class="lefts">
+							<a href="/?264135">
+                        		<img src="../public/imgs/35_avatar_middle.jpg" width="50" height="50">
+                     		</a>
+						</div>
+						<div class="rights">
+							<h5>
+								<a href="/forum.php?mod=viewthread&amp;tid=355797" target="_blank">【设计】我的第一次 3D 习作</a>
+								<span></span>
+							</h5>
+							<ul>
+								<li>蝈蝈亲戚</li>
+								<li>发表于 2016-06-04 18:41:41</li>
+								<li>82</li>
+								<li>3667</li>
+								<div class="clear"></div>
+							</ul>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="div">
+						<div class="lefts">
+							<a href="/?128298">
+                        		<img src="../public/imgs/98_avatar_middle.jpg" width="50" height="50">
+                     		</a>
+						</div>
+						<div class="rights">
+							<h5>
+								<a href="/forum.php?mod=viewthread&amp;tid=367019" target="_blank">【T1 摄影】厚积薄发</a>
+								<span></span>
+							</h5>
+							<ul>
+								<li>踢死你</li>
+								<li>发表于 2016-06-27 12:22:49</li>
+								<li>68</li>
+								<li>2345</li>
+								<div class="clear"></div>
+							</ul>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="div">
+						<div class="lefts">
+							<a href="/?264135">
+                        		<img src="../public/imgs/35_avatar_middle.jpg" width="50" height="50">
+                     		</a>
+						</div>
+						<div class="rights">
+							<h5>
+								<a href="/forum.php?mod=viewthread&amp;tid=368634" target="_blank">Smartisan Show：我的第一次视频习作</a>
+								<span></span>
+							</h5>
+							<ul>
+								<li>蝈蝈亲戚</li>
+								<li>发表于 2016-06-29 20:16:59</li>
+								<li>176</li>
+								<li>5323</li>
+								<div class="clear"></div>
+							</ul>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="div">
+						<div class="lefts">
+							<a href="/?92300">
+                        		<img src="../public/imgs/00_avatar_middle.jpg" width="50" height="50">
+                     		</a>
+						</div>
+						<div class="rights">
+							<h5>
+								<a href="/forum.php?mod=viewthread&amp;tid=367833" target="_blank">关于 T2 板块密码的那些事</a>
+								<span></span>
+							</h5>
+							<ul>
+								<li>snhc</li>
+								<li>发表于 2016-06-28 14:17:01</li>
+								<li>28</li>
+								<li>2824</li>
+								<div class="clear"></div>
+							</ul>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="div">
+						<div class="lefts">
+							<a href="/?3913">
+                        		<img src="../public/imgs/42_avatar_middle.jpg" width="50" height="50">
+                     		</a>
+						</div>
+						<div class="rights">
+							<h5>
+								<a href="/forum.php?mod=viewthread&amp;tid=366613" target="_blank">给经常说开不了屏的用户看的</a>
+								<span></span>
+							</h5>
+							<ul>
+								<li>JasonMarth</li>
+								<li>发表于 2016-06-26 11:04:14</li>
+								<li>38</li>
+								<li>4461</li>
+								<div class="clear"></div>
+							</ul>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="div">
+						<div class="lefts">
+							<a href="/?18377">
+                        		<img src="../public/imgs/77_avatar_middle.jpg" width="50" height="50">
+                     		</a>
+						</div>
+						<div class="rights">
+							<h5>
+								<a href="/forum.php?mod=viewthread&amp;tid=365149" target="_blank">版主说让我晒一下毕业照</a>
+								<span></span>
+							</h5>
+							<ul>
+								<li>肥皂盒Hanmer</li>
+								<li>发表于 2016-06-22 18:36:09</li>
+								<li>61</li>
+								<li>3086</li>
+								<div class="clear"></div>
+							</ul>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="div">
+						<div class="lefts">
+							<a href="/?54211">
+                        		<img src="../public/imgs/11_avatar_middle.jpg" width="50" height="50">
+                     		</a>
+						</div>
+						<div class="rights">
+							<h5>
+								<a href="/forum.php?mod=viewthread&amp;tid=367917" target="_blank">“44 岁的罗永浩站在被告席上......”</a>
+								<span></span>
+							</h5>
+							<ul>
+								<li>锤子科技解答员</li>
+								<li>发表于 2016-06-28 16:56:16</li>
+								<li>331</li>
+								<li>15044</li>
+								<div class="clear"></div>
+							</ul>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="btn">
+						<div class="btn-1">
+							<a href=""><<</a>
+							<a href="">1</a>
+							<a href="">2</a>
+							<a href="">3</a>
+							<a href="">···</a>
+							<a href="">9</a>
+							<a href="">10</a>
+							<a href="">>></a>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				<div class="right1">
+					<h4>版块推荐</h4>
+					<ul>
+						<li class="list1">
+							<a href="http://bbs.smartisan.com/forum-148-1.html" target="_blank">Smartisan T2</a>
+						</li>
+						<li class="list2">
+							<a href="http://bbs.smartisan.com/forum-100-1.html" target="_blank">Smartisan T1</a>
+						</li>
+						<li class="list3">
+							<a href="http://bbs.smartisan.com/forum-133-1.html" target="_blank">坚果手机</a>
+						</li>
+						<li class="list4">
+							<a href="http://bbs.smartisan.com/forum-128-1.html" target="_blank">单发应用</a>
+						</li>
+						<li class="list5">
+							<a href="http://bbs.smartisan.com/forum-157-1.html" target="_blank">刷机资源</a>
+						</li>
+						<li class="list6">
+							<a href="http://bbs.smartisan.com/forum-127-1.html" target="_blank">官方活动</a>
+						</li>
+						<li class="list7">
+							<a href="http://bbs.smartisan.com/forum-2-1.html" target="_blank">科技之外</a>
+						</li>
+						<li class="list8">
+							<a href="http://bbs.smartisan.com/forum-115-1.html" target="_blank">跳蚤市场</a>
+						</li>
+						<li class="list9">
+							<a href="http://bbs.smartisan.com/forum-129-1.html" target="_blank">线下聚会</a>
+						</li>
+						<li class="list10">
+							<a href="http://bbs.smartisan.com/forum-114-1.html" target="_blank">摄影分享</a>
+						</li>
+						<div class="clear"></div>
+					</ul>
+				</div>
+				<div class="right2">
+					<a target="_blank" href="http://dev.smartisan.com/">
+               			<img alt="smartisan开发者中心" src="../public/imgs/1465355376576.png">
+            		</a>
+				</div>
+				<div class="right3">
+					<a target="_blank" href="http://bbs.smartisan.com/forum.php?mod=forumdisplay&amp;fid=81&amp;filter=typeid&amp;typeid=455">
+               			<img alt="" src="../public/imgs/1449495809275.jpg">
+            		</a>
+				</div>
+				<div class="right4">
+					<h4>关于我们</h4>
+					<ul>
+						<li class="list1">
+							<a href="http://weibo.com/u/5702775935" target="_blank">论坛官方微博</a>
+						</li>
+						<li class="list2">
+							<a class="qr-trigger" data-href="http://weixin.qq.com/r/nHVwaHjEUCUvrTwL9yCO" data-title="打开手机，使用微信扫描二维码" data-summary="关注“锤子科技”官方服务号，即可通过手机微信完成购买 Smartisan 产品、订单查询、服务网点查询、人工客服等一系列操作。">官方微信</a>
+						</li>
+						<li class="list3">
+							<dl>
+								<dt>
+									<a target="_blank" href="http://www.smartisan.com/apps/bbs">锤子科技论坛</a>
+								</dt>
+								<dd>
+									不只是科技论坛。
+								</dd>
+							</dl>
+							<a class="qr-trigger" data-href="http://www.smartisan.com/apps/bbs"></a>
+						</li>
+						<div class="clear"></div>
+					</ul>
+				</div>
+				<div class="right5">
+					<h4>Smartisan OS Rom</h4>
+					<div class="top">
+						<div class="top1">
+							<a href="javascript:;">
+                        		请选择手机品牌
+                     		</a>
+						</div>
+						<ul>
+							<li>
+								<a href="javascript:;">
+									<img src="../public/imgs/14671084562942.png" alt="">                   
+									<span>小米</span>              
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img src="../public/imgs/14671084565221.png" alt="">
+									<span>一加</span>            
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">              
+									<img src="../public/imgs/14671084564275.png" alt="">              
+									<span>Nexus</span>           
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">              
+									<img src="../public/imgs/14671084564932.png" alt="">              
+									<span>三星</span>           
+								</a>
+							</li>
+						</ul>
+						<div class="top2">
+							<a href="javascript:;">
+                        		请选择机型
+                     		</a>
+						</div>
+					</div>
+					<div class="middle">
+						<button disabled>前往下载</button>
+						<button disabled>刷机教程</button>
+					</div>
+					<div class="bottom">
+						<span>最新发布日期 <em>2016.05.20</em></span>
+						<span>最新版本号 <em>2.6.2</em></span>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="right6">
+					<h4></h4>
+					<ul>
+						<li>
+							<a class="qr-trigger" title="" data-href="http://s.t.tt/5PgboN?&amp;source=share&amp;version=2">
+                  				<img alt="锤子阅读" src="../public/imgs/1451980141168.png" width="292" height="127">
+               				</a>
+						</li>
+						<li>
+							<a class="qr-trigger" title="" data-href="http://s.t.tt/L0aBD3?&amp;source=share&amp;version=2">
+                  				<img alt="锤子论坛" src="../public/imgs/1445161249414.png" width="292" height="127">
+               				</a>
+						</li>
+						<li>
+							<a class="qr-trigger" title="" data-href="http://s.t.tt/5GA9x6?&amp;source=share&amp;version=2">
+                  				<img alt="锤子论坛" src="../public/imgs/1451979922541.png" width="292" height="127">
+               				</a>
+						</li>
+						<li>
+							<a class="qr-trigger" title="" data-href="http://s.t.tt/k7Qb6A?&amp;source=share&amp;version=2">
+                  				<img alt="锤子论坛" src="../public/imgs/1459234459825.png" width="292" height="127">
+              				 </a>
+						</li>
+					</ul>
+				</div>
+				<div class="right7">
+					<h4>游戏推荐</h4>
+					<ul>
+						<li>
+							<a class="qr-trigger" title="" data-href="http://s.t.tt/Rr3MYp?&amp;source=share&amp;version=2">
+                  				<img alt="锤子论坛" src="../public/imgs/1457073657948.png" width="292" height="127">
+               				</a>
+						</li>
+						<li>
+							<a class="qr-trigger" title="" data-href="http://s.t.tt/LBd8X9?&amp;source=share&amp;version=2">
+              					<img alt="锤子论坛" src="../public/imgs/1462522843807.png" width="292" height="127">
+           					</a>
+						</li>
+						<li>
+							<a class="qr-trigger" title="" data-href="http://s.t.tt/5jKYD6?&amp;source=share&amp;version=2">
+                  				<img alt="锤子论坛" src="../public/imgs/1462522837690.png" width="292" height="127">
+               				</a>
+						</li>
+						<li>
+							<a class="qr-trigger" title="" data-href="http://s.t.tt/kWZeOv?&amp;source=share&amp;version=2">
+                  				<img alt="锤子论坛" src="../public/imgs/1462522839735.png" width="292" height="127">
+               				</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<!-- 尾部 -->
+		<div class="foot">
+			<div class="contenter">
+				<ul>
+					<li>
+						<a href="http://www.smartisan.com" target="_blank" title="锤子科技">锤子科技</a>
+					</li>
+					<li>
+						<a href="http://tieba.baidu.com/f?kw=%E9%94%A4%E5%AD%90%E7%A7%91%E6%8A%80" target="_blank" title="锤子科技吧">锤子科技吧</a>
+					</li>
+					<li>
+						<a href="http://dev.smartisan.com/" target="_blank" title="Smartisan开发者中心">Smartisan开发者中心</a>
+					</li>
+					<li>
+						<a href="http://bbs.gfan.com" target="_blank" title="机锋安卓论坛">机锋安卓论坛</a>
+					</li>
+					<li>
+						<a href="http://www.oneplusbbs.com" target="_blank" title="一加手机">一加手机</a>
+					</li>
+					<li>
+						<a href="http://www.romzj.com/" target="_blank" title="ROM之家">ROM之家</a>
+					</li>
+					<li>
+						<a href="http://www.lovebizhi.com/android.html" target="_blank" title="爱壁纸">爱壁纸</a>
+					</li>
+					<li>
+						<a href="http://www.good.cc" target="_blank" title="价格网">价格网</a>
+					</li>
+					<li>
+						<a href="http://jiyouhui.it168.com" target="_blank" title="机友会">机友会</a>
+					</li>
+					<li>
+						<a href="http://bbs.togic.com/forum.php" target="_blank" title="泰捷论坛">泰捷论坛</a>
+					</li>
+					<li>
+						<a href="http://app.yzmg.com" target="_blank" title="ROM助手">ROM助手</a>
+					</li>
+					<li>
+						<a href="http://android.ithome.com" target="_blank" title="安卓之家">安卓之家</a>
+					</li>
+					<li>
+						<a href="http://bbs.maxthon.cn" target="_blank" title="傲游社区">傲游社区</a>
+					</li>
+					<li>
+						<a href="http://bbs.dospy.com " target="_blank" title="DOSPY论坛">DOSPY论坛</a>
+					</li>
+					<li>
+						<a href="http://bbs.m.qq.com" target="_blank" title="手机管家论坛">手机管家论坛</a>
+					</li>
+					<li>
+						<a href="http://benyouhui.it168.com" target="_blank" title="本友会">本友会</a>
+					</li>
+					<li>
+						<a href="http://www.chubao.cn" target="_blank" title="触宝电话">触宝电话</a>
+					</li>
+					<li>
+						<a href="http://www.7to.cn" target="_blank" title="奇兔刷机">奇兔刷机</a>
+					</li>
+					<li>
+						<a href="http://bbs.ydss.cn" target="_blank" title="移动叔叔论坛">移动叔叔论坛</a>
+					</li>
+					<li>
+						<a href="http://bbs.duba.net" target="_blank" title="爱毒霸论坛">爱毒霸论坛</a>
+					</li>
+					<li>
+						<a href="https://duotai.org" target="_blank" title="多态网络">多态网络</a>
+					</li>
+					<li>
+						<a href="http://bbs.yj.youku.com" target="_blank" title="优酷智能硬件">优酷智能硬件</a>
+					</li>
+					<li>
+						<a href="http://bbs.smartisan.com/thread-106095-1-1.html" target="_blank" title="申请友情链接">申请友情链接</a>
+					</li>
+					<div class="clear"></div>
+				</ul>
+				<div class="copyright">
+					<h6>Powered by Discuz! X3.2 Licensed</h6>
+					<ul>
+						<li>
+							<a class="switchMobile" href="javascript:;">手机版</a>
+						</li>
+						<li>
+							<a href="http://bbs.smartisan.com/forum.php?mod=misc&amp;action=showdarkroom">小黑屋</a>
+						</li>
+						<li>
+							<a href="http://www.smartisan.com/apps/bbs" title="点击下载锤子科技论坛客户端" target="_blank" style="font-weight: bold;">论坛客户端</a>
+						</li>
+						<li>
+							<a href="http://www.miitbeian.gov.cn/" target="_blank">京ICP备14041720号-1</a>
+						</li>
+						
+					</ul>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+	<script src="../public/js/smartisan.js"></script>
+</html>

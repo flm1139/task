@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>支付页面</title>
+	<script src="../public/js/jquery.min.js"></script>
+	<link rel="stylesheet" href="../public/css/smartisan.css">
+</head>
+<body>
+	<div class="pay-content">
+			<!-- 头部 -->
+		<div class="header">
+			<div class="header-main">
+				<div class="logo">
+					<img src="../public/imgs/logo.png" alt="">
+				</div>
+				<div class="nav">
+					<div class="nav-left">
+						<ul>
+							<li><a href="">首页</a></li>
+							<li><a href="">Smartisan T2</a></li>
+							<li><a href="">坚果手机</a></li>
+							<li><a href="home/cloud.html">欢喜云</a></li>
+							<li><a href="">应用下载</a></li>
+							<li><a href="home/bbs.html">官方论坛</a></li>
+							<li>|</li>
+							<li class="clear"></li>
+						</ul>
+						<div class="clear"></div>
+					</div>
+					<div class="nav-right">
+						<button>登录</button>
+					</div>
+					
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		<!-- 内容部分 -->
+		<div class="pay-caption">
+			<div class="pay-center">
+				<h2>支付订单</h2>
+				<div class="pay-cart">
+					<h3>提交订单成功</h3>
+					<p>请在 <span>24 小时内</span>完成支付，超时订单将自动取消。</p>
+					<p>我们将在您完成支付后的 72 小时内发货。</p>
+				</div>
+				<div class="pay-road">
+					<div class="pay-text">选择支付方式</div>
+					<div class="pay-blank">
+						<span class="left cli" name="f1">平台支付</span>
+						<span name="f2">借记卡及信用卡支付</span>
+						<span name="f3">分期付款</span>
+						<div class="clear"></div>
+						<div class="pay-bottom">
+							<div name="f1" class="f cli">
+								<img src="../public/imgs/weixinpay.png" class="img" width="144" height="34">
+								<img src="../public/imgs/alipay.png" alt="" width="144" height="34">
+								<img src="../public/imgs/ylpay.png" alt="" width="144" height="34">
+								<div><img src="../public/imgs/erweima.png" alt="" width="196" height="196"></div>
+								<p> 请使用微信扫一扫<br> 扫描二维码支付 </p>
+							</div>
+							<div name="f2" class="f">
+								<img src="../public/imgs/pay-icbc.png" alt="" width="144" height="34">
+								<img src="../public/imgs/pay-abc.png" alt="" width="144" height="34">
+								<img src="../public/imgs/pay-boc.png" alt="" width="144" height="34">
+								<img src="../public/imgs/pay-ccb.png" alt="" width="144" height="34">
+								<img src="../public/imgs/pay-cmb.png" alt="" width="144" height="34">
+								<img src="../public/imgs/pay-spdb.png" alt="" width="144" height="34">
+								<img src="../public/imgs/pay-gdb.png" alt="" width="144" height="34">
+								<img src="../public/imgs/pay-bocom.png" alt="" width="144" height="34">
+								<img src="../public/imgs/pay-psbc.png" alt="" width="144" height="34">
+								<img src="../public/imgs/pay-cncb.png" alt="" width="144" height="34">
+								<img src="../public/imgs/pay-cmbc.png" alt="" width="144" height="34">
+								<img src="../public/imgs/pay-ceb.png" alt="" width="144" height="34">
+								<img src="../public/imgs/pay-hxb.png" alt="" width="144" height="34">
+								<img src="../public/imgs/pay-cib.png" alt="" width="144" height="34">
+								<img src="../public/imgs/pay-bos.png" alt="" width="144" height="34">
+								<img src="../public/imgs/pay-srcb.png" alt="" width="144" height="34">
+								<img src="../public/imgs/pay-pab.png" alt="" width="144" height="34">
+								<img src="../public/imgs/pay-brcb.png" alt="" width="144" height="34">
+							</div>
+							<div name="f3" class="f">
+								<div class="div-img">
+										<img src="../public/imgs/zhinstallpay.png" alt="">
+									</div>
+								<div class="right">
+									<h6>分期付款说明：</h6>
+									<p>使用招行信用卡分期支付您的订单后，此处将显示每期还款金额。它是根据您的订单估算得出的整数金额，未显示小数点以后的金额（即角单位和分单位的金额）。银行有权决定是否接受您的分期付款申请。实际支付数额请以银行账单为准。</p>
+								</div>
+								<div class="left">
+									<p>3 期，每期金额约为 ¥ 692，每期银行收取手续费约为 25（单期费率 1.3%）</p>
+									<p>6 期，每期金额约为 ¥ 349，每期银行收取手续费约为 15（单期费率 0.8%）</p>
+									<p>12 期，每期金额约为 ¥ 178，每期银行收取手续费约为 11（单期费率 0.6%）</p>
+									<p>18 期，每期金额约为 ¥ 123，每期银行收取手续费约为 11（单期费率 0.6%）</p>
+									<p>24 期，每期金额约为 ¥ 95，每期银行收取手续费约为 11（单期费率 0.6%）</p>
+								</div>
+								<div class="clear"></div>
+							</div>
+						</div>
+					</div>
+					<div class="pay-now">
+						<span class="togg"><a href="javascript:;confirm('你的金额已不足，请充值到以下账号：\n\n62200548963157859646315')">现在支付</a></span>
+						<span> 应付金额：<em>¥ 1,999.00</em></span>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- 尾部 -->
+		
+		<div class="footer">
+			<div class="content">
+				<div class="siteinfo">
+					<dl>
+						<dt>
+							<span>订单服务</span>
+						</dt>
+						<dd><a href="">购买指南</a></dd>
+						<dd><a href="">支付方式</a></dd>
+						<dd><a href="">送货政策</a></dd>
+					</dl>
+					<dl>
+						<dt>
+							<span>服务支持</span>
+						</dt>
+						<dd><a href="">售后服务</a></dd>
+						<dd><a href="">维修门店</a></dd>
+						<dd><a href="">零售门店</a></dd>
+					</dl>
+					<dl>
+						<dt>
+							<span>媒体中心</span>
+						</dt>
+						<dd><a href="">新闻动态</a></dd>
+						<dd><a href="">官方视频</a></dd>
+						<dd><a href="">图片资源</a></dd>
+					</dl>
+					<dl>
+						<dt>
+							<span>关于公司</span>
+						</dt>
+						<dd><a href="">公司简介</a></dd>
+						<dd><a href="">加入我们</a></dd>
+						<dd><a href="">联系我们</a></dd>
+					</dl>
+					<dl>
+						<dt>
+							<span>关注我们</span>
+						</dt>
+						<dd><a href="">新浪微博</a></dd>
+						<dd><a href="">官方微信</a></dd>
+						<dd><a href="">官方贴吧</a></dd>
+					</dl>
+					<ul class="service">
+						<li class="online">
+							<a href="">在线咨询</a>
+							<div class="clear"></div>
+						</li>
+						<li class="tel">
+							<a href="">400-619-0909</a>
+						</li>
+						<li class="time">
+							周一至周日 9:00-18:00（仅收市话费)
+						</li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+				<div class="copyright">
+					<ul class="language">
+						<li><a href="javascript:;"><span class="eng"></span>English</a></li>
+						<li><a href="javascript:;"><span class="jap"></span>日本語</a></li>
+						<h3>
+							<a href="javascript:;"><span class="flag"></span>
+							中文 </a>
+							<span class="carset"></span>
+						</h3>
+					</ul>
+					<h3>Copyright © 2016, Smartisan Digital Co., Ltd. All Rights Reserved.</h3>
+					<h3 class="company">北京锤子数码科技有限公司</h3>
+					<ul class="privacy">
+						<li><a href="">法律声明</a></li>
+						<li><a href="">隐私条款</a></li>
+						<li><a href="">开发者中心</a></li>
+						<li><a href="">家长监护工程</a></li>
+					</ul>
+					<div class="clear"></div>
+					<h4>
+						<a href="">
+							<span>京ICP备14041720号-1</span>
+							<span>京ICP证140622号</span>
+							<span>京公网安备11010502025474</span>
+						</a>
+					</h4>
+				</div>
+			</div>
+		</div>
+		<span class="sidebtn"></span>
+	</div>
+</body>
+<script src="../public/js/smartisan.js"></script>
+</html>
